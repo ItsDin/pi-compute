@@ -4,7 +4,7 @@
 #include "openmp.h"
 #include <math.h>
 
-typedef double_t fvec_t __attribute__((vector_size((8)*sizeof(double_t))));
+typedef double_t fvec_t __attribute__((vector_size((4)*sizeof(double_t))));
 
 double compute_pi(size_t dt)
 {
